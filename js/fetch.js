@@ -6,43 +6,44 @@ function loadData() {
 function displayUser(data) {
     const ul = document.getElementById('user-list');
     for (const user of data) {
-        const li = document.createElement('li');
+        const li = document.createElement(li);
         li.innerText = user.name;
         ul.appendChild(li);
     }
 }
 
 
-// function displayUser(data) {
-//     const ul = document.getElementById('user-list');
-//     for (const user of data) {
-//         const li = document.createElement('li');
-//         li.innerText = user.name;
-//         ul.appendChild(li);
+function displayUser(data) {
+    const ul = document.getElementById('user-list');
+    for (const user of data) {
+        const li = document.createElement('li');
+        li.innerText = user.name;
+        ul.appendChild(li);
 
-//     }
+    }
 
-// }
-
-
+}
 
 
-// function displayUser(data) {
-//     // for (const user of data) {
-//     //     console.log(user.name, user.email);
 
-//     // }
 
-//     const ul = document.getElementById('user-list');
-//     for (const user of data) {
-//         const li = document.createElement('li');
-//         li.innerText = user.name;
-//         ul.appendChild(li);
-//     }
-//     for (const user of data) {
-//         const li = document.createElement('li');
-//         li.innerText = user.email;
-//         ul.appendChild(li);
-//     }
-// }
+function displayUser(data) {
+    // for (const user of data) {
+    //     console.log(user.name, user.email);
 
+    // }
+
+    const ul = document.getElementById('user-list');
+    for (const user of data) {
+        const li = document.createElement('li');
+        li.innerText = user.name;
+        ul.appendChild(li);
+    }
+    for (const user of data) {
+        const li = document.createElement('li');
+        li.innerText = user.email;
+        ul.appendChild(li);
+    }
+}
+const stuInfo = JSON.stringify({ name: "James", roll: 3 });
+console.log(stuInfo.name);
