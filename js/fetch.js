@@ -5,5 +5,8 @@ function loadData() {
 }
 
 function displayUser(data) {
-    console.log(data)
+    for (const user of data) {
+        console.log(user.name, user.email);
+
+    }
 }
