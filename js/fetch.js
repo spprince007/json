@@ -5,8 +5,21 @@ function loadData() {
 }
 
 function displayUser(data) {
-    for (const user of data) {
-        console.log(user.name, user.email);
+    // for (const user of data) {
+    //     console.log(user.name, user.email);
 
+    // }
+
+    const ul = document.getElementById('user-list');
+    for (const user of data) {
+        const li = document.createElement('li');
+        li.innerText = user.name;
+        ul.appendChild(li);
+    }
+    for (const user of data) {
+        const li = document.createElement('li');
+        li.innerText = user.email;
+        ul.appendChild(li);
     }
 }
+
